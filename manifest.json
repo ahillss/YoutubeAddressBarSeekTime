@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Youtube Address Bar Seek Time",
+  "description": "Sets the seek time of youtube videos in the address bar",
+  "host_permissions": [ "*://*.youtube.com/*" ],
+  "content_scripts": [{
+    "matches": [ "*://*.youtube.com/*" ],
+    "run_at":"document_start",
+    "js": [ "inject.js" ]
+  }],
+  "web_accessible_resources": [{
+    "resources": [ "myscript.js" ],
+    "matches": [ "<all_urls>" ]
+  }]
+}
