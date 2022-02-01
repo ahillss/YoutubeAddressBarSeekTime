@@ -22,14 +22,8 @@
                 var pl_id = pl_id_from_url?pl_id_from_url[1]:null; //p.getPlaylistId();
                 var pl_ind = pl_ind_from_url?pl_ind_from_url[1]:-1; //p.getPlaylistIndex();
                 
-                var url = 'watch?v='+vid;
-                
-                //~ if(pl_id) {
-                    //~ url+='&list='+pl_id+'&index='+pl_ind;
-                //~ }
-                url+= pl_id?('&list='+pl_id+'&index='+pl_ind):'';
-                //~ url+= pl_id && '&list='+pl_id+'&index='+pl_ind || '';
-                
+                var url = 'watch?v='+vid;                
+                url+= pl_id?('&list='+pl_id+'&index='+pl_ind):'';                
                 url+='&t='+t.toFixed()+'s';
                 
                 history.replaceState(null, '', url);
