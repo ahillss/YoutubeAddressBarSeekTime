@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "version": "1.0",
-  "name": "Youtube Address Bar Seek Time",
+  "version": "1.1",
+  "name": "Youtube Address Bar Seek Time test",
   "description": "Sets the seek time of youtube videos in the address bar",
   "host_permissions": [ "*://*.youtube.com/*" ],
   "content_scripts": [{
