@@ -6,7 +6,7 @@ So you can close and reopen the browser and continue youtube videos where you le
 
 ## Updates
 
-* fixed problem where the playlist index is wrong due to youtube auto incrementing it when the page is loaded
+* fixed issue with incorrect playlist index, due to Youtube auto incrementing it
 
 ## Issue
 
